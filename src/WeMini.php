@@ -44,7 +44,7 @@ class WeMini
         $code2session_url = sprintf($this->code2session_url, $this->appId, $this->appSecret, $code);
         $httpClient = new Client;
         $response = $httpClient->request("GET", $code2session_url);
-        $authInfo = json_decode($response->getBody());
+        $authInfo = json_decode($response->getBody(),true);
         if (!isset($authInfo['session_key'])) {
             if (isset($authInfo['errcode'])) {
                 throw new WeException($authInfo['errmsg'], $authInfo['errcode']);
