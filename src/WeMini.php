@@ -18,11 +18,10 @@ class WeMini
     private $sessionKey;
 
 
-    public function __construct($appId, $appSecret, $session_key)
+    public function __construct($appId, $appSecret)
     {
         $this->appId = $appId;
         $this->appSecret = $appSecret;
-        $this->sessionKey = $session_key;
     }
 
     /**
