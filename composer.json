@@ -1,0 +1,19 @@
+{
+  "name": "aven/wemini",
+  "description": "wechat mini app php develop sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "aven",
+      "email": "aven.devlop@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Aven\\WeMini\\": "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  }
+}
